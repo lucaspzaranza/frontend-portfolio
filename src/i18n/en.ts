@@ -7,7 +7,7 @@ export const en = {
   },
   home: {
     title: "Hi, I'm Lucas Zaranza.",
-    subtitle: 'Fullstack Developer with main focus on Frontend.',
+    subtitle: 'Fullstack Developer specialist in Frontend.',
   },
   about: {
     title: 'About Me',
@@ -25,6 +25,13 @@ export const en = {
         Driven by continuous learning, I enjoy building clean, efficient, and meaningful solutions.
 
         Nice to meet you — always open to new connections.
-      `
+      `,
+    ageLabel: 'years',
+    info: {
+      name: 'Lucas Zaranza',
+      location: 'Fortaleza, CE | São Paulo, SP - Brazil',
+      university: 'UECE - Ceará State University',
+      degree: 'Computer Science (2011 - 2017)',
+    },
   },
 }
