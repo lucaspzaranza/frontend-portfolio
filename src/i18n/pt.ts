@@ -34,4 +34,34 @@ export const pt = {
       degree: 'Ciência da Computação (2011 - 2017)',
     },
   },
+  projects: {
+    title: 'Projetos',
+    backToGrid: 'Voltar para projetos',
+    items: {
+      portfolio: {
+        title: 'Meu Portfólio Frontend',
+        description: 'Descrição do projeto aqui...'
+      },
+      zazastro: {
+        title: 'Zazastro - Site de Astrologia',
+        description: 'Descrição do projeto aqui...'
+      },
+      botbot: {
+        title: 'BotBot - Dashboard para Robôs',
+        description: 'Descrição do projeto aqui...'
+      },
+      elisa: {
+        title: 'Landing Page Elisa Ferraz',
+        description: 'Descrição do projeto aqui...'
+      },
+      marcos: {
+        title: 'Constellations of Marcos',
+        description: 'Descrição do projeto aqui...'
+      },
+      games: {
+        title: 'Meu Portfólio de Games',
+        description: 'Descrição do projeto aqui...'
+      }
+    }
+  }
 }
