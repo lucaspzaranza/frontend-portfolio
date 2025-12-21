@@ -8,6 +8,8 @@ import { FaArrowLeft } from 'react-icons/fa6'
 import { useLanguage } from '@/context/LanguageContext'
 import { projectsData } from '@/data/projects.data'
 import TechStack from '@/components/TechStack'
+import ProjectLinks from '@/components/ProjectLinks'
+import YoutubeModal from '@/components/YoutubeModal'
 
 function ProjectsGrid({ projects, onSelect, t }: any) {
   return (
@@ -54,13 +56,13 @@ function ProjectsDetailsLayout({
   selectedProject,
   onSelect,
   t,
+  onVideoClick,
 }: any) {
   const project = projects.find((p: any) => p.id === selectedProject)
   if (!project) return null
 
   return (
     <div className="flex gap-12">
-
       {/* Lista à esquerda */}
       <div className="w-1/3 space-y-6">
         {projects.map((p: any) => {
@@ -113,7 +115,6 @@ function ProjectsDetailsLayout({
 
       {/* Detalhes à direita */}
       <div className="w-2/3">
-
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <button
@@ -155,15 +156,21 @@ function ProjectsDetailsLayout({
           {t.projects.items[project.id].title}
         </h3>
 
-        {/* TechStack (Desktop, abaixo do título) */}
+        {/* TechStack */}
         <TechStack
           technologies={project.technologies}
           size={20}
           color="#facc15"
-          className="mb-6"
+          className="mb-4"
         />
 
-        <p className="text-zinc-400 text-lg leading-relaxed whitespace-pre-line">
+        {/* Links */}
+        <ProjectLinks
+          links={project.links}
+          onVideoClick={onVideoClick}
+        />
+
+        <p className="mt-6 text-zinc-400 text-lg leading-relaxed whitespace-pre-line">
           {t.projects.items[project.id].description}
         </p>
       </div>
@@ -171,7 +178,7 @@ function ProjectsDetailsLayout({
   )
 }
 
-function MobileProjectItem({ project, t }: any) {
+function MobileProjectItem({ project, t, onVideoClick }: any) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -193,7 +200,7 @@ function MobileProjectItem({ project, t }: any) {
       </button>
 
       {open && (
-        <div className="p-4 space-y-4">
+        <div className="p-4 space-y-4 text-center">
           <TechStack
             technologies={project.technologies}
             size={20}
@@ -201,7 +208,12 @@ function MobileProjectItem({ project, t }: any) {
             className="justify-center"
           />
 
-          <p className="text-zinc-400 whitespace-pre-line text-center">
+          <ProjectLinks
+            links={project.links}
+            onVideoClick={onVideoClick}
+          />
+
+          <p className="text-zinc-400 whitespace-pre-line">
             {t.projects.items[project.id].description}
           </p>
         </div>
@@ -213,6 +225,7 @@ function MobileProjectItem({ project, t }: any) {
 export default function Projects() {
   const { t } = useLanguage()
   const [selectedProject, setSelectedProject] = useState<string | null>(null)
+  const [youtubeVideoId, setYoutubeVideoId] = useState<string | null>(null)
 
   return (
     <section id="projects" className="min-h-screen py-24">
@@ -234,6 +247,7 @@ export default function Projects() {
             selectedProject={selectedProject}
             onSelect={setSelectedProject}
             t={t}
+            onVideoClick={setYoutubeVideoId}
           />
         )}
       </div>
@@ -245,9 +259,18 @@ export default function Projects() {
             key={project.id}
             project={project}
             t={t}
+            onVideoClick={setYoutubeVideoId}
           />
         ))}
       </div>
+
+      {/* MODAL YOUTUBE */}
+      {youtubeVideoId && (
+        <YoutubeModal
+          videoId={youtubeVideoId}
+          onClose={() => setYoutubeVideoId(null)}
+        />
+      )}
     </section>
   )
 }
