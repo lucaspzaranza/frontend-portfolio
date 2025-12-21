@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { useLanguage } from '@/context/LanguageContext'
 import { FaArrowDown } from "react-icons/fa6";
-import ContactButtons from '../layout/ContactButtons';
+import ContactButtons from '../ContactButtons';
 
 export default function Home() {
   const { t } = useLanguage()

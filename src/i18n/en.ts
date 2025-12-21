@@ -35,33 +35,54 @@ export const en = {
     },
   },
   projects: {
-    title: 'Projetos',
+    title: 'Projects',
     backToGrid: 'Back to projects',
     items: {
       portfolio: {
         title: 'My Frontend Portfolio',
-        description: 'Descrição do projeto aqui...'
+        description:
+          'My personal portfolio developed with React, Next.js, TypeScript, and Tailwind CSS.',
       },
       zazastro: {
-        title: 'Zazastro - Astrology Website',
-        description: 'Descrição do projeto aqui...'
+        title: 'Zazastro – Astrology Website',
+        description: `I developed my own Astrology website with Birth Chart visualization tools that I felt were missing from other platforms.
+      I used React, Next.js, TypeScript, and Tailwind CSS on the frontend.
+      The Birth Chart rendering was built using the D3.js library for graphical visualization.
+      On the backend, I used Node.js with Express and the Swiss Ephemeris library for accurate astrological calculations.`,
       },
       botbot: {
-        title: 'BotBot - Dashboard for Robots',
-        description: 'Description of the project here...'
+        title: 'BotBot – Robot Management Dashboard',
+        description: `A web dashboard for robot management, allowing users to monitor information, visualize coordinates, and send commands.
+      Integrated with AI for intelligent responses through a chat interface, along with camera feeds displayed on the frontend.
+      Developed with TypeScript, React, Tailwind CSS, and the ROSLIB library for sending and receiving robot messages and data.`,
       },
       elisa: {
-        title: "Elisa Ferraz' Landing Page",
-        description: 'Descrição do projeto aqui...'
+        title: 'Elisa Ferraz Landing Page',
+        description: `A freelance project where I developed a landing page for the lawyer Elisa Ferraz.
+      I used React, TypeScript, and Tailwind CSS to create a modern and responsive interface that highlights the legal services offered.`,
+      },
+      digicard: {
+        title: 'Digimon Card Game',
+        description: `A multiplayer digital card game based on the Digimon universe, where players can battle using virtual cards.
+      Developed with Angular on the frontend and .NET with C# on the backend, using SignalR for real-time communication between players, focusing on an engaging and interactive user experience. Styling was done using Material UI components.
+      Tip: to test locally, open one normal browser window and another in incognito mode.`,
+      },
+      oldPortfolio: {
+        title: 'My Old Portfolio',
+        description: `My previous portfolio, developed with React and TypeScript.
+      I used Styled Components for project styling.`,
       },
       marcos: {
         title: 'Constellations of Marcos',
-        description: 'Descrição do projeto aqui...'
+        description: `A simple project created as a tribute to my Astrology teacher, Marcos Monteiro, in which I developed a system that lists stars according to a chosen astrological coordinate.
+      It is also possible to search by star name or constellation.
+      For styling, I used Styled Components, following the CSS-in-JS approach.`,
       },
       games: {
-        title: 'My Game Portfólio',
-        description: 'Descrição do projeto aqui...'
-      }
-    }
+        title: 'My Game Portfolio',
+        description: `My portfolio of games developed over the years using Unity3D and C#.
+      I used React and plain CSS for styling.`,
+      },
+    },
   }
 }

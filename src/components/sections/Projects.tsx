@@ -2,42 +2,12 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { useLanguage } from '@/context/LanguageContext'
 import clsx from 'clsx'
 import { FaArrowLeft } from 'react-icons/fa6'
 
-type Project = {
-  id: string
-  image: string
-}
-
-const projects: Project[] = [
-  {
-    id: 'portfolio',
-    image: '/projects/portfolio.png',
-  },
-  {
-    id: 'zazastro',
-    image: '/projects/zazastro.png',
-  },
-  {
-    id: 'botbot',
-    image: '/projects/botbot.png',
-  },
-  {
-    id: 'elisa',
-    image: '/projects/elisa.png',
-  },
-  {
-    id: 'marcos',
-    image: '/projects/marcos.png',
-  },
-  {
-    id: 'games',
-    image: '/projects/games.png',
-  }
-  // você vai adicionando aqui
-]
+import { useLanguage } from '@/context/LanguageContext'
+import { projectsData } from '@/data/projects.data'
+import TechStack from '@/components/TechStack'
 
 function ProjectsGrid({ projects, onSelect, t }: any) {
   return (
@@ -86,7 +56,6 @@ function ProjectsDetailsLayout({
   t,
 }: any) {
   const project = projects.find((p: any) => p.id === selectedProject)
-
   if (!project) return null
 
   return (
@@ -101,17 +70,16 @@ function ProjectsDetailsLayout({
             <button
               key={p.id}
               onClick={() => onSelect(p.id)}
-              className={`
-                relative w-full h-28 md:h-32 rounded-xl overflow-hidden
+              className={clsx(
+                `
+                relative w-full h-40 rounded-xl overflow-hidden
                 border transition group
-                ${isSelected
+              `,
+                isSelected
                   ? 'ring-2 ring-yellow-400 border-transparent'
                   : 'border-zinc-800 hover:border-zinc-600'
-                }
-              `}
+              )}
             >
-
-              {/* Background image */}
               <Image
                 src={p.image}
                 alt={t.projects.items[p.id].title}
@@ -124,18 +92,15 @@ function ProjectsDetailsLayout({
                 unoptimized
               />
 
-              {/* Overlay */}
               <div
-                className={`
-                  absolute inset-0 transition
-                  ${isSelected
+                className={clsx(
+                  'absolute inset-0 transition',
+                  isSelected
                     ? 'bg-zinc-950/30'
                     : 'bg-zinc-950/70 group-hover:bg-zinc-950/55'
-                  }
-              `}
+                )}
               />
 
-              {/* Title */}
               <div className="relative z-10 h-full flex items-end p-4">
                 <span className="text-lg font-semibold">
                   {t.projects.items[p.id].title}
@@ -146,19 +111,20 @@ function ProjectsDetailsLayout({
         })}
       </div>
 
-
       {/* Detalhes à direita */}
       <div className="w-2/3">
 
-        {/* Header dos detalhes */}
+        {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <button
             onClick={() => onSelect(null)}
             className="
-              flex flex-row gap-1 items-center text-zinc-400 hover:text-yellow-400 transition
+              flex flex-row gap-1 items-center
+              text-zinc-400 hover:text-yellow-400 transition
             "
           >
-            <FaArrowLeft size={20} /> <span>{t.projects.backToGrid}</span>
+            <FaArrowLeft size={20} />
+            <span>{t.projects.backToGrid}</span>
           </button>
 
           <button
@@ -184,10 +150,18 @@ function ProjectsDetailsLayout({
           />
         </div>
 
-        {/* Conteúdo */}
-        <h3 className="text-3xl font-bold mb-4">
+        {/* Título */}
+        <h3 className="text-3xl font-bold mb-3">
           {t.projects.items[project.id].title}
         </h3>
+
+        {/* TechStack (Desktop, abaixo do título) */}
+        <TechStack
+          technologies={project.technologies}
+          size={20}
+          color="#facc15"
+          className="mb-6"
+        />
 
         <p className="text-zinc-400 text-lg leading-relaxed whitespace-pre-line">
           {t.projects.items[project.id].description}
@@ -202,10 +176,7 @@ function MobileProjectItem({ project, t }: any) {
 
   return (
     <div className="border border-zinc-800 rounded-xl overflow-hidden">
-      <button
-        onClick={() => setOpen(!open)}
-        className="w-full"
-      >
+      <button onClick={() => setOpen(!open)} className="w-full">
         <div className="relative aspect-video">
           <Image
             src={project.image}
@@ -222,8 +193,17 @@ function MobileProjectItem({ project, t }: any) {
       </button>
 
       {open && (
-        <div className="p-4 text-zinc-400 whitespace-pre-line">
-          {t.projects.items[project.id].description}
+        <div className="p-4 space-y-4">
+          <TechStack
+            technologies={project.technologies}
+            size={20}
+            color="#facc15"
+            className="justify-center"
+          />
+
+          <p className="text-zinc-400 whitespace-pre-line text-center">
+            {t.projects.items[project.id].description}
+          </p>
         </div>
       )}
     </div>
@@ -244,13 +224,13 @@ export default function Projects() {
       <div className="hidden md:block">
         {!selectedProject ? (
           <ProjectsGrid
-            projects={projects}
+            projects={projectsData}
             onSelect={setSelectedProject}
             t={t}
           />
         ) : (
           <ProjectsDetailsLayout
-            projects={projects}
+            projects={projectsData}
             selectedProject={selectedProject}
             onSelect={setSelectedProject}
             t={t}
@@ -260,7 +240,7 @@ export default function Projects() {
 
       {/* MOBILE */}
       <div className="md:hidden space-y-6">
-        {projects.map(project => (
+        {projectsData.map(project => (
           <MobileProjectItem
             key={project.id}
             project={project}
