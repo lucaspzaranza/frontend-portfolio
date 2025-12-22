@@ -29,7 +29,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt" className="dark">
-      <body className="bg-zinc-950 text-zinc-100">
+      <body className="
+        text-zinc-100
+        bg-zinc-950
+        bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08)_2px,transparent_2px)]
+        bg-size-[32px_32px]
+      ">
         <LanguageProvider>
           {children}
         </LanguageProvider>

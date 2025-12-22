@@ -8,6 +8,7 @@ export const pt = {
   home: {
     title: 'Olá, eu sou o Lucas Zaranza.',
     subtitle: 'Desenvolvedor Fullstack especialista em Frontend.',
+    downloadCv: 'Baixar CV',
   },
   about: {
     title: 'Sobre Mim',
@@ -84,5 +85,10 @@ export const pt = {
         Utilizei React, e CSS puro para estilização.`
       }
     }
+  },
+  contact: {
+    title: 'Vamos trabalhar juntos',
+    description: 'Sinta-se à vontade para entrar em contato através de qualquer uma das plataformas abaixo.',
+    downloadCV: "Baixar Currículo"
   }
 }

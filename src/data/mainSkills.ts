@@ -9,6 +9,7 @@ const mainSkills = [
   'css',
   'git',
   'dotnet',
+  'blazor',
   'csharp',
   'unity',
   'database',

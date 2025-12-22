@@ -11,7 +11,7 @@ import {
 } from 'react-icons/fa'
 
 import TechStack from '@/components/TechStack'
-import mainSkills from '@/data/main-skills'
+import mainSkills from '@/data/mainSkills'
 import { useIsDesktop } from '@/hooks/useIsDesktop'
 
 // Data de nascimento: 31 de Agosto de 1993
@@ -38,7 +38,7 @@ export default function About() {
   const isDesktop = useIsDesktop()
 
   return (
-    <section className="min-h-screen flex flex-col justify-center gap-16">
+    <section className="min-h-screen flex flex-col justify-center gap-2 md:gap-8">
 
       {/* ================= ABOUT (LEFT + RIGHT) ================= */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-12 w-full">

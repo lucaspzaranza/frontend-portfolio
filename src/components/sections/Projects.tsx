@@ -228,7 +228,7 @@ export default function Projects() {
   const [youtubeVideoId, setYoutubeVideoId] = useState<string | null>(null)
 
   return (
-    <section id="projects" className="min-h-screen py-24">
+    <section id="projects" className="pt-4 pb-8 md:py-10">
       <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
         {t.projects.title}
       </h2>

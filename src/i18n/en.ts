@@ -8,6 +8,7 @@ export const en = {
   home: {
     title: "Hi, I'm Lucas Zaranza.",
     subtitle: 'Fullstack Developer specialist in Frontend.',
+    downloadCv: 'Download CV',
   },
   about: {
     title: 'About Me',
@@ -86,5 +87,10 @@ export const en = {
       I used React and plain CSS for styling.`,
       },
     },
+  },
+  contact: {
+    title: "Let's work together",
+    description: 'Feel free to reach out through any of the platforms below.',
+    downloadCV: "Download Resume"
   }
 }

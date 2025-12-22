@@ -21,7 +21,7 @@ import {
   SiExpress,
   SiStyledcomponents,
   SiPostgresql,
-  SiMysql,
+  SiBlazor,
 } from 'react-icons/si'
 import { DiMsqlServer } from "react-icons/di";
 import { TbBrandCSharp } from 'react-icons/tb'
@@ -41,6 +41,7 @@ const techIconMap: Record<
   nextjs: { icon: SiNextdotjs, label: 'Next.js' },
   angular: { icon: FaAngular, label: 'Angular' },
   dotnet: { icon: SiDotnet, label: '.NET' },
+  blazor: { icon: SiBlazor, label: 'Blazor' },
   csharp: { icon: TbBrandCSharp, label: 'C#' },
   typescript: { icon: SiTypescript, label: 'TypeScript' },
   javascript: { icon: SiJavascript, label: 'JavaScript' },
