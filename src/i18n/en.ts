@@ -11,6 +11,7 @@ export const en = {
   },
   about: {
     title: 'About Me',
+    skillsTitle: "Main Skills",
     description:
       `
         I am a developer with over 11 years of experience, starting my career in the game industry working with Unity3D and C#. Over time, I turned game development into a hobby and shifted my focus to software development, working as a Fullstack Developer with:
@@ -51,7 +52,7 @@ export const en = {
       On the backend, I used Node.js with Express and the Swiss Ephemeris library for accurate astrological calculations.`,
       },
       botbot: {
-        title: 'BotBot – Robot Management Dashboard',
+        title: 'Robot Management Dashboard',
         description: `A web dashboard for robot management, allowing users to monitor information, visualize coordinates, and send commands.
       Integrated with AI for intelligent responses through a chat interface, along with camera feeds displayed on the frontend.
       Developed with TypeScript, React, Tailwind CSS, and the ROSLIB library for sending and receiving robot messages and data.

@@ -161,7 +161,7 @@ function ProjectsDetailsLayout({
           technologies={project.technologies}
           size={20}
           color="#facc15"
-          className="mb-4"
+          className="mb-4 justify-start"
         />
 
         {/* Links */}

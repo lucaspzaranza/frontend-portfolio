@@ -33,7 +33,7 @@ export const projectsData: ProjectData[] = [
   },
   {
     id: 'zazastro',
-    image: '/projects/zazastro.png',
+    image: '/projects/zazastro.webp',
     technologies: [
       'react',
       'nextjs',
@@ -75,7 +75,7 @@ export const projectsData: ProjectData[] = [
   },
   {
     id: 'elisa',
-    image: '/projects/elisa.png',
+    image: '/projects/elisa.webp',
     technologies: ['react', 'nextjs', 'typescript', 'tailwind'],
     links: [
       {
@@ -90,7 +90,7 @@ export const projectsData: ProjectData[] = [
   },
   {
     id: 'digicard',
-    image: '/projects/digicard.png',
+    image: '/projects/digicard.webp',
     technologies: ['angular', 'typescript', 'dotnet', 'csharp'],
     links: [
       {

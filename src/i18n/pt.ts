@@ -11,6 +11,7 @@ export const pt = {
   },
   about: {
     title: 'Sobre Mim',
+    skillsTitle: "Principais Habilidades",
     description:
       `
         Sou desenvolvedor com mais de 11 anos de experiência, iniciando minha trajetória na indústria de games com Unity3D e C#. Com o tempo, transformei os games em um hobby e migrei meu foco para o desenvolvimento de sistemas, atuando como Desenvolvedor Fullstack com:
@@ -50,7 +51,7 @@ export const pt = {
         No backend utilizei Node.js com Express e usei a biblioteca Swiss Ephemeris para cálculos astrológicos precisos.`,
       },
       botbot: {
-        title: 'BotBot - Dashboard para Robôs',
+        title: 'Dashboard para Robôs',
         description: `Dashboard web para gerenciamento de robôs, onde podemos monitorar suas informações, visualizar suas coordenadas, e enviar comandos.
           Integrado com IA para respostas inteligentes através de um chat, acoplado com câmeras com visualização no frontend.
           Desenvolvido com TypeScript, React, Tailwind CSS, e a biblioteca ROSLIB para comunicação de envio e recebimento de mensagens e dados do robô.

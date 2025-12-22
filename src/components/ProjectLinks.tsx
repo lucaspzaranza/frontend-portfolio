@@ -24,12 +24,12 @@ const iconMap: Record<
 > = {
   github: {
     icon: FaGithub,
-    color: '#ffffff', // branco (invertido no fundo escuro)
+    color: '#ffffff',
     label: 'GitHub',
   },
   link: {
     icon: FaExternalLinkAlt,
-    color: '#ffffff', // yellow-400
+    color: '#ffffff',
     label: 'Link',
   },
   video: {
@@ -46,7 +46,7 @@ export default function ProjectLinks({
   if (!links || links.length === 0) return null
 
   return (
-    <div className="flex flex-wrap gap-4 mt-4">
+    <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-4">
       {links.map(link => {
         const config = iconMap[link.type as LinkType]
         if (!config) return null

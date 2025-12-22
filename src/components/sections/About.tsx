@@ -10,6 +10,10 @@ import {
   FaGraduationCap,
 } from 'react-icons/fa'
 
+import TechStack from '@/components/TechStack'
+import mainSkills from '@/data/main-skills'
+import { useIsDesktop } from '@/hooks/useIsDesktop'
+
 // Data de nascimento: 31 de Agosto de 1993
 const birthDate = new Date(1993, 7, 31)
 
@@ -31,9 +35,12 @@ function getAge(birthDate: Date) {
 
 export default function About() {
   const { t } = useLanguage()
+  const isDesktop = useIsDesktop()
 
   return (
-    <div className="min-h-screen flex items-center">
+    <section className="min-h-screen flex flex-col justify-center gap-16">
+
+      {/* ================= ABOUT (LEFT + RIGHT) ================= */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-12 w-full">
 
         {/* Lado esquerdo */}
@@ -89,14 +96,32 @@ export default function About() {
           </div>
         </div>
 
-        {/* Lado direito — ALINHADO AO CENTRO NO DESKTOP */}
-        <div className="md:w-2/3 md:flex md:items-center md:justify-center">
+        {/* Lado direito */}
+        <div className="md:w-2/3 flex items-center">
           <div className="text-zinc-400 text-lg leading-relaxed whitespace-pre-line">
             {t.about.description}
           </div>
         </div>
-
       </div>
-    </div>
+
+      {/* ================= MAIN SKILLS ================= */}
+      <div className="w-full">
+
+        <h3 className="text-xl md:text-2xl font-semibold text-zinc-200 mb-8 text-center">
+          {t.about.skillsTitle ?? 'Main Technologies'}
+        </h3>
+
+        <TechStack
+          technologies={mainSkills}
+          size={isDesktop ? 60 : 32}
+          className="
+            justify-center
+            gap-x-6 gap-y-8
+            md:gap-x-10 md:gap-y-10
+          "
+        />
+      </div>
+
+    </section>
   )
 }
