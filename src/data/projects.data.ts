@@ -23,7 +23,7 @@ export const projectsData: ProjectData[] = [
     links: [
       {
         type: 'link',
-        url: 'https://lucasz.vercel.app/',
+        url: 'https://www.lucaszaranza.com.br/',
       },
       {
         type: 'github',
