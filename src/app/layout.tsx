@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lucas Zaranza | Frontend Developer",
     description: "Frontend portfolio with React and Next.js",
-    url: "https://lucasz.vercel.app/",
+    url: "https://www.lucaszaranza.com.br/",
     siteName: "Lucas Zaranza's Portfolio",
     images: [
       {
-        url: "https://lucasz.vercel.app/code.png", // coloque esse arquivo em /public
+        url: "https://www.lucaszaranza.com.br/og-card.png",
         width: 1200,
         height: 630,
         alt: "Preview do Meu Projeto",
