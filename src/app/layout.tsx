@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: "Lucas Zaranza's Portfolio",
     images: [
       {
-        url: "https://www.lucaszaranza.com.br/og-card.png",
+        url: "https://www.lucaszaranza.com.br/og-card-1.png",
         width: 1200,
         height: 630,
         alt: "Preview do Meu Projeto",
