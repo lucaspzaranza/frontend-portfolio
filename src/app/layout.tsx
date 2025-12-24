@@ -3,14 +3,14 @@ import './globals.css'
 import { LanguageProvider } from '@/context/LanguageContext'
 
 export const metadata: Metadata = {
-  title: "Lucas Zaranza | Frontend Developer",
-  description: "Frontend portfolio with React and Next.js",
+  title: "Lucas Zaranza | Frontend Developer • React • Next.js • TypeScript",
+  description: "Frontend Developer specialized in React, Next.js and TypeScript. Portfolio with real projects, clean UI and modern web technologies.",
   icons: {
     icon: "code.png",
   },
   openGraph: {
-    title: "Lucas Zaranza | Frontend Developer",
-    description: "Frontend portfolio with React and Next.js",
+    title: "Lucas Zaranza | Frontend Developer • React • Next.js • TypeScript",
+    description: "Frontend Developer specialized in React, Next.js and TypeScript. Portfolio with real projects, clean UI and modern web technologies.",
     url: "https://www.lucaszaranza.com.br/",
     siteName: "Lucas Zaranza's Portfolio",
     images: [
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt" className="dark">
+    <html lang="pt-BR" className="dark">
       <body className="
         text-zinc-100
         bg-zinc-950
