@@ -60,16 +60,8 @@ export const projectsData: ProjectData[] = [
     technologies: ['react', 'nextjs', 'typescript', 'tailwind'],
     links: [
       {
-        type: 'link',
-        url: 'https://front-robotics.vercel.app/robot-home',
-      },
-      {
-        type: 'github',
-        url: 'https://github.com/lucaspzaranza/front_robotics',
-      },
-      {
         type: 'video',
-        videoId: 'oWUodZ7IVRg',
+        videoId: 'jeLhruyxpio',
       }
     ],
   },

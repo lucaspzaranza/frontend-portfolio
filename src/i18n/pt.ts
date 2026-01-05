@@ -55,8 +55,7 @@ export const pt = {
         title: 'Dashboard para Robôs',
         description: `Dashboard web para gerenciamento de robôs, onde podemos monitorar suas informações, visualizar suas coordenadas, e enviar comandos.
           Integrado com IA para respostas inteligentes através de um chat, acoplado com câmeras com visualização no frontend.
-          Desenvolvido com TypeScript, React, Tailwind CSS, e a biblioteca ROSLIB para comunicação de envio e recebimento de mensagens e dados do robô.
-          OBS: para acessar o sistema, utilize o usuário e senha iguais: "lucasz".`,
+          Desenvolvido com TypeScript, React, Tailwind CSS, e a biblioteca ROSLIB para comunicação de envio e recebimento de mensagens e dados do robô.`,
       },
       elisa: {
         title: 'Landing Page Elisa Ferraz',

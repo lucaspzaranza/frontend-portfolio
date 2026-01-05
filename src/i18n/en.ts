@@ -56,8 +56,7 @@ export const en = {
         title: 'Robot Management Dashboard',
         description: `A web dashboard for robot management, allowing users to monitor information, visualize coordinates, and send commands.
       Integrated with AI for intelligent responses through a chat interface, along with camera feeds displayed on the frontend.
-      Developed with TypeScript, React, Tailwind CSS, and the ROSLIB library for sending and receiving robot messages and data.
-      Tip: to access the system, use the username and password both as "lucasz".`,
+      Developed with TypeScript, React, Tailwind CSS, and the ROSLIB library for sending and receiving robot messages and data.`
       },
       elisa: {
         title: 'Elisa Ferraz Landing Page',

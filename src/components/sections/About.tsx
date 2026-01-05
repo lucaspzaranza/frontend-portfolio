@@ -38,7 +38,7 @@ export default function About() {
   const isDesktop = useIsDesktop()
 
   return (
-    <section className="min-h-screen flex flex-col justify-center gap-2 md:gap-8">
+    <section className="min-h-screen flex flex-col justify-center gap-2 md:gap-8 md:py-4">
 
       {/* ================= ABOUT (LEFT + RIGHT) ================= */}
       <div className="flex flex-col md:flex-row gap-6 md:gap-12 w-full">
