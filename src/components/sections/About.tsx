@@ -72,12 +72,12 @@ export default function About() {
               <span>{t.about.info.name}</span>
             </div>
 
-            <div className="flex items-center gap-1.5">
+            {/* <div className="flex items-center gap-1.5">
               <FaBirthdayCake className="text-yellow-400" />
               <span>
                 {getAge(birthDate)} {t.about.ageLabel}
               </span>
-            </div>
+            </div> */}
 
             <div className="flex items-center gap-1.5">
               <FaMapMarkerAlt className="text-yellow-400" />
