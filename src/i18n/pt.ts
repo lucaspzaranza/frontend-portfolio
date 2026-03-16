@@ -40,6 +40,10 @@ export const pt = {
     title: 'Projetos',
     backToGrid: 'Voltar para projetos',
     items: {
+      astroCourse: {
+        title: 'Landig Page para Curso de Astrologia',
+        description: 'Landing Page para um curso de Astrologia ministrado por mim.',
+      },
       portfolio: {
         title: 'Meu Portfólio Frontend',
         description: 'Meu portfólio pessoal desenvolvido com React, Next.js, TypeScript e Tailwind CSS.',

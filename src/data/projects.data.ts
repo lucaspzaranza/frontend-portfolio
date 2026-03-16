@@ -17,6 +17,21 @@ export type ProjectData = {
 
 export const projectsData: ProjectData[] = [
   {
+    id: 'astroCourse',
+    image: '/projects/astrocourse.webp',
+    technologies: ['react', 'nextjs', 'typescript', 'tailwind'],
+    links: [
+      {
+        type: 'link',
+        url: 'https://cursoastrologiacrista.vercel.app/',
+      },
+      {
+        type: 'github',
+        url: 'https://github.com/lucaspzaranza/cursoastrologiacrista',
+      },
+    ],
+  },
+  {
     id: 'portfolio',
     image: '/projects/portfolio.png',
     technologies: ['react', 'nextjs', 'typescript', 'tailwind'],

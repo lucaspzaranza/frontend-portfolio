@@ -40,6 +40,10 @@ export const en = {
     title: 'Projects',
     backToGrid: 'Back to projects',
     items: {
+      astroCourse: {
+        title: 'Landing Page for Astrology Course',
+        description: 'Landing Page for an Astrology Course taught by me.',
+      },
       portfolio: {
         title: 'My Frontend Portfolio',
         description:
