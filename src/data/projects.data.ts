@@ -87,7 +87,7 @@ export const projectsData: ProjectData[] = [
     links: [
       {
         type: 'link',
-        url: 'https://elisaferraz.adv.br/',
+        url: 'https://elisa-adv.vercel.app/',
       },
       {
         type: 'github',
