@@ -2,7 +2,8 @@
 
 import clsx from 'clsx'
 import { useLanguage } from '@/context/LanguageContext'
-import { SiGithub, SiGmail, SiLinkedin, SiWhatsapp } from 'react-icons/si'
+import { SiGithub, SiGmail, SiWhatsapp } from 'react-icons/si';
+import { FaLinkedin } from "react-icons/fa";
 
 type ContactButtonsProps = {
   variant?: 'compact' | 'default'
@@ -52,7 +53,7 @@ const ContactButtons = ({
           circleSize
         )}
       >
-        <SiLinkedin size={iconSize} color="#FDC700" />
+        <FaLinkedin size={iconSize} color="#FDC700" />
       </a>
 
       {/* GitHub */}

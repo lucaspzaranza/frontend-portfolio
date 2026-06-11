@@ -17,6 +17,17 @@ export type ProjectData = {
 
 export const projectsData: ProjectData[] = [
   {
+    id: 'calendarWidget',
+    image: '/projects/calendarWidget.png',
+    technologies: ['dotnet', 'csharp', 'avalonia'],
+    links: [
+      {
+        type: 'github',
+        url: 'https://github.com/lucaspzaranza/calendar-widget-dotnet',
+      },
+    ],
+  },
+  {
     id: 'astroCourse',
     image: '/projects/astrocourse.webp',
     technologies: ['react', 'nextjs', 'typescript', 'tailwind'],

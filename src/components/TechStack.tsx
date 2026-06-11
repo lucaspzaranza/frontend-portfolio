@@ -17,11 +17,12 @@ import {
   SiTypescript,
   SiJavascript,
   SiTailwindcss,
-  SiD3Dotjs,
   SiExpress,
   SiStyledcomponents,
   SiPostgresql,
   SiBlazor,
+  SiD3,
+  SiAvaloniaui 
 } from 'react-icons/si'
 import { DiMsqlServer } from "react-icons/di";
 import { TbBrandCSharp } from 'react-icons/tb'
@@ -41,6 +42,7 @@ const techIconMap: Record<
   nextjs: { icon: SiNextdotjs, label: 'Next.js' },
   angular: { icon: FaAngular, label: 'Angular' },
   dotnet: { icon: SiDotnet, label: '.NET' },
+  avalonia: { icon: SiAvaloniaui, label: 'Avalonia UI' },
   blazor: { icon: SiBlazor, label: 'Blazor' },
   csharp: { icon: TbBrandCSharp, label: 'C#' },
   typescript: { icon: SiTypescript, label: 'TypeScript' },
@@ -50,7 +52,7 @@ const techIconMap: Record<
   html: { icon: FaHtml5, label: 'HTML5' },
   css: { icon: FaCss3Alt, label: 'CSS3' },
   git: { icon: FaGitAlt, label: 'Git' },
-  d3: { icon: SiD3Dotjs, label: 'D3.js' },
+  d3: { icon: SiD3, label: 'D3.js' },
   express: { icon: SiExpress, label: 'Express.js' },
   unity: { icon: FaUnity, label: 'Unity3D' },
   'styled-components': { icon: SiStyledcomponents, label: 'Styled Components' },

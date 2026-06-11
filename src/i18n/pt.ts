@@ -40,6 +40,11 @@ export const pt = {
     title: 'Projetos',
     backToGrid: 'Voltar para projetos',
     items: {
+      calendarWidget: {
+        title: 'Widget de Calendário para Desktop',
+        description: `Me aventurei em desenvolver um Widget de um Calendário pra Desktop para Windows. 
+        Ele fica fixado no seu Desktop, se conecta com o Google Calendar, e você pode visualizar, criar ou editar seus compromissos, que vai sincronizar tudinho com o Google Calendar. Criei uma interface moderna inspirada no design de Glassmorphism.`
+      },
       astroCourse: {
         title: 'Landig Page para Curso de Astrologia',
         description: 'Landing Page para um curso de Astrologia ministrado por mim.',
