@@ -46,7 +46,7 @@ export const pt = {
         Ele fica fixado no seu Desktop, se conecta com o Google Calendar, e você pode visualizar, criar ou editar seus compromissos, que vai sincronizar tudinho com o Google Calendar. Criei uma interface moderna inspirada no design de Glassmorphism.`
       },
       astroCourse: {
-        title: 'Landig Page para Curso de Astrologia',
+        title: 'Landing Page para Curso de Astrologia',
         description: 'Landing Page para um curso de Astrologia ministrado por mim.',
       },
       portfolio: {
