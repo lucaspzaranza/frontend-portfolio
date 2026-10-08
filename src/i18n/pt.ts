@@ -15,18 +15,21 @@ export const pt = {
     skillsTitle: "Principais Habilidades",
     description:
       `
-        Sou desenvolvedor com mais de 11 anos de experiência, iniciando minha trajetória na indústria de games com Unity3D e C#. Com o tempo, transformei os games em um hobby e migrei meu foco para o desenvolvimento de sistemas, atuando como Desenvolvedor Fullstack com:
-        
-        Frontend: Angular e React
+        Sou desenvolvedor Frontend com mais de 10 anos de experiência. Comecei na indústria de games com Unity3D e C#, e levei dessa época o gosto por interfaces interativas, performance e atenção aos detalhes de experiência do usuário.
 
-        Backend: .NET
+        Hoje meu foco é construir interfaces web robustas e bem estruturadas com:
 
-        Bancos de dados: SQL Server, PostgreSQL, MySQL e MongoDB
+        Frontend: React, Next.js, TypeScript e Angular
+        Visualização de dados: D3.js e SVG
+        Integração: APIs REST e familiaridade com .NET e bancos de dados relacionais
 
-        Tenho experiência sólida trabalhando em equipes que seguem metodologias ágeis, colaborando na entrega contínua de produtos, na manutenção de código escalável e na criação de soluções orientadas a boas práticas.
-        Sou movido por aprendizado contínuo e por transformar complexidade em software simples, útil e bem construído.
-       
-        Muito prazer — e sempre aberto a novas conexões.
+        Projeto em destaque: Zazastro (zazastro.com.br), uma aplicação web de astrologia que desenvolvi do zero. No frontend, ela inclui renderização de mapas astrais interativos em SVG com D3.js, arquitetura de rotas com Next.js App Router (mapas compartilháveis por link), gerenciamento de estado complexo entre múltiplos tipos de mapa, interface responsiva para desktop e mobile e internacionalização em vários idiomas.
+
+        Tenho experiência sólida em equipes ágeis, contribuindo para entregas contínuas, componentização, código escalável e boas práticas.
+
+        Movido por aprendizado contínuo e por transformar complexidade em interfaces simples, úteis e bem construídas.
+
+        Muito prazer, e sempre aberto a novas conexões.
       `,
     ageLabel: 'anos',
     info: {
@@ -55,10 +58,15 @@ export const pt = {
       },
       zazastro: {
         title: 'Zazastro - Site de Astrologia',
-        description: `Desenvolvi meu próprio site de Astrologia com ferramentas de visualização de Mapa Astral que senti falta em outros sites.
-        Utilizei React, Next.js, TypeScript, e Tailwind CSS no frontend.
-        A montagem do Mapa Astral foi feita com a biblioteca D3.js para visualização gráfica.
-        No backend utilizei Node.js com Express e usei a biblioteca Swiss Ephemeris para cálculos astrológicos precisos.`,
+        description: `
+        Aplicação web de astrologia que projetei e desenvolvi sozinho, do zero, com foco forte em frontend.
+
+        - Renderização de mapas astrais interativos em SVG com D3.js: zodiaco, aspectos, dignidades, partes árabes e estrelas fixas, com tooltips e interação por toque no mobile.
+        - Arquitetura de rotas com Next.js App Router, com estado do mapa codificado na URL para permitir compartilhar mapas por link.
+        - Gerenciamento de estado complexo entre múltiplos tipos de mapa (natal, trânsitos, revoluções, sinastria, progressões, profecções).
+        - Interface responsiva para desktop e mobile, internacionalização com next-intl e configurações do usuário persistidas.
+        - Backend em Node.js/Express para os cálculos astronômicos, consumido pelo frontend via API REST.
+        `,
       },
       botbot: {
         title: 'Dashboard para Robôs',
