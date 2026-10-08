@@ -19,8 +19,8 @@ const DownloadCVButton = ({
 
   const filePath =
     language === 'pt'
-      ? '/Lucas_Zaranza_CV_PT.pdf'
-      : '/Lucas_Zaranza_CV_EN.pdf'
+      ? '/CV-LZ-PT.pdf'
+      : '/CV-LZ-EN.pdf'
 
   return (
     <div
