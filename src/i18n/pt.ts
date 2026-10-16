@@ -43,6 +43,10 @@ export const pt = {
     title: 'Projetos',
     backToGrid: 'Voltar para projetos',
     items: {
+      newGamePortfolio: {
+        title: "Novo Portfólio de Games",
+        description: `Nova versão do meu portfólio de Desenvolvedor de Jogos Unity, agora utilizando React, Next.js e Tailwind. O projeto conta com diferentes temas de estilização.`
+      },
       calendarWidget: {
         title: 'Widget de Calendário para Desktop',
         description: `Me aventurei em desenvolver um Widget de um Calendário pra Desktop para Windows. 

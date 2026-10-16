@@ -43,6 +43,10 @@ export const en = {
     title: 'Projects',
     backToGrid: 'Back to projects',
     items: {
+      newGamePortfolio: {
+        title: "New Game Portfolio",
+        description: `New version of my Unity Game Developer Portfolio. This time I used React, Next.js and Tailwind. The project counts with differents UI themes.`,
+      },
       calendarWidget: {
         title: 'Desktop Calendar Widget',
         description: `I ventured into developing a Desktop Calendar Widget for Windows.

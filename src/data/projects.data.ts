@@ -17,6 +17,21 @@ export type ProjectData = {
 
 export const projectsData: ProjectData[] = [
   {
+    id: 'newGamePortfolio',
+    image: '/projects/new-game-portfolio.png',
+    technologies: ['react', 'nextjs', 'tailwind'],
+    links: [
+      {
+        type: 'link',
+        url: 'https://my-game-portfolio-next.vercel.app/',
+      },
+      {
+        type: 'github',
+        url: 'https://github.com/lucaspzaranza/my-game-portfolio-next/',
+      },
+    ],
+  },
+  {
     id: 'calendarWidget',
     image: '/projects/calendarWidget.png',
     technologies: ['dotnet', 'csharp', 'avalonia'],
