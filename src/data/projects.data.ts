@@ -17,172 +17,187 @@ export type ProjectData = {
 
 export const projectsData: ProjectData[] = [
   {
-    id: 'newGamePortfolio',
-    image: '/projects/new-game-portfolio.png',
-    technologies: ['react', 'nextjs', 'tailwind'],
+    id: "zazaGames",
+    image: "/projects/zaza-games.webp",
+    technologies: ["react", "nextjs", "tailwind"],
     links: [
       {
-        type: 'link',
-        url: 'https://my-game-portfolio-next.vercel.app/',
+        type: "link",
+        url: "https://zaza-games-frontend.vercel.app/pt",
       },
       {
-        type: 'github',
-        url: 'https://github.com/lucaspzaranza/my-game-portfolio-next/',
+        type: "github",
+        url: "https://github.com/lucaspzaranza/zaza-games-frontend",
       },
     ],
   },
   {
-    id: 'calendarWidget',
-    image: '/projects/calendarWidget.png',
-    technologies: ['dotnet', 'csharp', 'avalonia'],
+    id: "newGamePortfolio",
+    image: "/projects/new-game-portfolio.png",
+    technologies: ["react", "nextjs", "tailwind"],
     links: [
       {
-        type: 'github',
-        url: 'https://github.com/lucaspzaranza/calendar-widget-dotnet',
+        type: "link",
+        url: "https://my-game-portfolio-next.vercel.app/",
+      },
+      {
+        type: "github",
+        url: "https://github.com/lucaspzaranza/my-game-portfolio-next/",
       },
     ],
   },
   {
-    id: 'astroCourse',
-    image: '/projects/astrocourse.webp',
-    technologies: ['react', 'nextjs', 'typescript', 'tailwind'],
+    id: "calendarWidget",
+    image: "/projects/calendarWidget.png",
+    technologies: ["dotnet", "csharp", "avalonia"],
     links: [
       {
-        type: 'link',
-        url: 'https://cursoastrologiacrista.vercel.app/',
-      },
-      {
-        type: 'github',
-        url: 'https://github.com/lucaspzaranza/cursoastrologiacrista',
+        type: "github",
+        url: "https://github.com/lucaspzaranza/calendar-widget-dotnet",
       },
     ],
   },
   {
-    id: 'portfolio',
-    image: '/projects/portfolio.png',
-    technologies: ['react', 'nextjs', 'typescript', 'tailwind'],
+    id: "astroCourse",
+    image: "/projects/astrocourse.webp",
+    technologies: ["react", "nextjs", "typescript", "tailwind"],
     links: [
       {
-        type: 'link',
-        url: 'https://www.lucaszaranza.com.br/',
+        type: "link",
+        url: "https://cursoastrologiacrista.vercel.app/",
       },
       {
-        type: 'github',
-        url: 'https://github.com/lucaspzaranza/frontend-portfolio',
+        type: "github",
+        url: "https://github.com/lucaspzaranza/cursoastrologiacrista",
       },
     ],
   },
   {
-    id: 'zazastro',
-    image: '/projects/zazastro.webp',
+    id: "portfolio",
+    image: "/projects/portfolio.png",
+    technologies: ["react", "nextjs", "typescript", "tailwind"],
+    links: [
+      {
+        type: "link",
+        url: "https://www.lucaszaranza.com.br/",
+      },
+      {
+        type: "github",
+        url: "https://github.com/lucaspzaranza/frontend-portfolio",
+      },
+    ],
+  },
+  {
+    id: "zazastro",
+    image: "/projects/zazastro.webp",
     technologies: [
-      'react',
-      'nextjs',
-      'typescript',
-      'd3',
-      'tailwind',
-      'node',
-      'express',
+      "react",
+      "nextjs",
+      "typescript",
+      "d3",
+      "tailwind",
+      "node",
+      "express",
     ],
     links: [
       {
-        type: 'link',
-        url: 'https://www.zazastro.com.br',
+        type: "link",
+        url: "https://www.zazastro.com.br",
       },
       {
-        type: 'github',
-        url: 'https://github.com/lucaspzaranza/zazastro',
+        type: "github",
+        url: "https://github.com/lucaspzaranza/zazastro",
       },
     ],
   },
   {
-    id: 'botbot',
-    image: '/projects/botbot.png',
-    technologies: ['react', 'nextjs', 'typescript', 'tailwind'],
+    id: "botbot",
+    image: "/projects/botbot.png",
+    technologies: ["react", "nextjs", "typescript", "tailwind"],
     links: [
       {
-        type: 'video',
-        videoId: 'jeLhruyxpio',
-      }
-    ],
-  },
-  {
-    id: 'elisa',
-    image: '/projects/elisa.webp',
-    technologies: ['react', 'nextjs', 'typescript', 'tailwind'],
-    links: [
-      {
-        type: 'link',
-        url: 'https://elisa-adv.vercel.app/',
-      },
-      {
-        type: 'github',
-        url: 'https://github.com/lucaspzaranza/elisa-adv',
+        type: "video",
+        videoId: "jeLhruyxpio",
       },
     ],
   },
   {
-    id: 'digicard',
-    image: '/projects/digicard.webp',
-    technologies: ['angular', 'typescript', 'dotnet', 'csharp'],
+    id: "elisa",
+    image: "/projects/elisa.webp",
+    technologies: ["react", "nextjs", "typescript", "tailwind"],
     links: [
       {
-        type: 'link',
-        url: 'https://digimon-signalr.vercel.app/',
+        type: "link",
+        url: "https://elisa-adv.vercel.app/",
       },
       {
-        type: 'github',
-        url: 'https://github.com/lucaspzaranza/digimon-signalr',
-      },
-      {
-        type: 'video',
-        videoId: 'xzkA0rF5tyc'
+        type: "github",
+        url: "https://github.com/lucaspzaranza/elisa-adv",
       },
     ],
   },
   {
-    id: 'oldPortfolio',
-    image: '/projects/old-portfolio.png',
-    technologies: ['react', 'javascript', 'styled-components'],
+    id: "digicard",
+    image: "/projects/digicard.webp",
+    technologies: ["angular", "typescript", "dotnet", "csharp"],
     links: [
       {
-        type: 'link',
-        url: 'https://lucasz-old-portfolio.vercel.app/',
+        type: "link",
+        url: "https://digimon-signalr.vercel.app/",
       },
       {
-        type: 'github',
-        url: 'https://github.com/lucaspzaranza/dev-zaza',
+        type: "github",
+        url: "https://github.com/lucaspzaranza/digimon-signalr",
+      },
+      {
+        type: "video",
+        videoId: "xzkA0rF5tyc",
       },
     ],
   },
   {
-    id: 'marcos',
-    image: '/projects/marcos.png',
-    technologies: ['react', 'javascript', 'styled-components'],
+    id: "oldPortfolio",
+    image: "/projects/old-portfolio.png",
+    technologies: ["react", "javascript", "styled-components"],
     links: [
       {
-        type: 'link',
-        url: 'https://constellations-of-marcos.vercel.app/',
+        type: "link",
+        url: "https://lucasz-old-portfolio.vercel.app/",
       },
       {
-        type: 'github',
-        url: 'https://github.com/lucaspzaranza/constellations-of-marcos',
+        type: "github",
+        url: "https://github.com/lucaspzaranza/dev-zaza",
       },
     ],
   },
   {
-    id: 'games',
-    image: '/projects/games.png',
-    technologies: ['react', 'javascript', 'css', 'unity', 'csharp'],
+    id: "marcos",
+    image: "/projects/marcos.png",
+    technologies: ["react", "javascript", "styled-components"],
     links: [
       {
-        type: 'link',
-        url: 'https://lucaszaranza-gamedev.netlify.app/',
+        type: "link",
+        url: "https://constellations-of-marcos.vercel.app/",
       },
       {
-        type: 'github',
-        url: 'https://github.com/lucaspzaranza/my-game-portfolio',
+        type: "github",
+        url: "https://github.com/lucaspzaranza/constellations-of-marcos",
       },
     ],
   },
-]
+  {
+    id: "games",
+    image: "/projects/games.png",
+    technologies: ["react", "javascript", "css", "unity", "csharp"],
+    links: [
+      {
+        type: "link",
+        url: "https://lucaszaranza-gamedev.netlify.app/",
+      },
+      {
+        type: "github",
+        url: "https://github.com/lucaspzaranza/my-game-portfolio",
+      },
+    ],
+  },
+];

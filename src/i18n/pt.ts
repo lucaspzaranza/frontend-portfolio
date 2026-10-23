@@ -72,6 +72,15 @@ export const pt = {
         - Backend em Node.js/Express para os cálculos astronômicos, consumido pelo frontend via API REST.
         `,
       },
+      zazaGames: {
+        title: 'Zaza Games - Jogos para Eventos',
+        description: `
+        Site desenvolvido para divulgar meus serviços de criação de jogos sob encomenda para eventos, apresentando as soluções e facilitando o contato com potenciais clientes.
+
+        A arquitetura organiza o conteúdo em componentes e seções reutilizáveis, com uma interface responsiva que adapta a apresentação dos serviços a diferentes dispositivos.
+        Configurei o consentimento e as preferências de cookies do site e integrei os serviços da Google Tag e o Google Analytics 4 (GA4) para mensuração de visitas e interações.
+        `,
+      },
       botbot: {
         title: 'Dashboard para Robôs',
         description: `Dashboard web para gerenciamento de robôs, onde podemos monitorar suas informações, visualizar suas coordenadas, e enviar comandos.
